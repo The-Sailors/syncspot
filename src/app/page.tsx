@@ -15,14 +15,6 @@ export default function Home() {
         <header>
           <nav className="mx-auto flex max-w-7xl items-center justify-center px-32 py-3 text-xl">
             <span className="flex-1">SyncSpot</span>
-            <div className="flex items-center justify-center gap-4">
-              <a href="/#faq" className="no-underline hover:underline">
-                FAQ
-              </a>
-              <a href="/#doc" className="no-underline hover:underline">
-                Documentation
-              </a>
-            </div>
             <div className="flex flex-1 justify-end">
               <motion.button
                 whileHover={{ scale: 1.2 }}
@@ -37,17 +29,17 @@ export default function Home() {
         </header>
         <motion.div
           initial={{ scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1.2 }}
+          animate={{ opacity: 1, scale: 1.0 }}
           transition={{ ease: 'easeOut', duration: 1 }}
         >
-          <section className="relative mx-auto flex max-w-5xl flex-col items-center p-8 pb-64 pt-64">
-            <h2 className="flex flex-col text-center text-5xl font-medium text-slate-600 ">
+          <section className="relative mx-auto flex max-w-6xl flex-col items-center p-8 pb-64 pt-64">
+            <h2 className="flex flex-col text-center text-6xl font-medium text-slate-600 ">
               The easiest way,{' '}
               <span className="bg-gradient-to-r from-yellow-300 from-20% via-yellow-400 to-yellow-600 to-70% bg-clip-text pb-6 text-transparent">
                 to manage your meetings time
               </span>
             </h2>
-            <span className="text-xl font-light">
+            <span className="text-2xl font-light">
               Setup bulletpoints to focus on during your meetings
             </span>
           </section>
