@@ -1,78 +1,77 @@
-import { Check, Circle, Plus, Trash2 } from 'lucide-react'
+'use client'
+import { motion } from 'framer-motion'
 
 import { Button } from '@/components/ui/button'
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
-import { Input } from '@/components/ui/input'
-
 export default function Home() {
   return (
-    <Card className="mx-auto w-full max-w-xl">
-      <CardHeader>
-        <CardTitle>Define your tasks</CardTitle>
-        <CardDescription>
-          Add the tasks you need to complete and estimate how long they will
-          take.
-        </CardDescription>
-      </CardHeader>
-      <CardContent className="grid gap-4 px-6 pb-2">
-        <div className="flex items-center gap-4">
-          <Circle className="h-4 w-4 text-gray-500" />
-          <Input className="flex-1" placeholder="Task name" />
-          <Input className="w-24" placeholder="Time Est(min)" type="number" />
-          <Button className="ml-auto h-6 w-6" size="icon" variant="outline">
-            <Trash2 className="h-4 w-4" />
-            <span className="sr-only">Remove task</span>
-          </Button>
-        </div>
-        <div className="flex items-center gap-4">
-          <Circle className="h-4 w-4 text-gray-500" />
-          <Input className="flex-1" placeholder="Task name" />
-          <Input className="w-24" placeholder="Time Est(min)" type="number" />
-          <Button className="ml-auto h-6 w-6" size="icon" variant="outline">
-            <Trash2 className="h-4 w-4" />
-            <span className="sr-only">Remove task</span>
-          </Button>
-        </div>
-        <div className="flex items-center gap-4">
-          <Circle className="h-4 w-4 text-gray-500" />
-          <Input className="flex-1" placeholder="Task name" />
-          <Input className="w-24" placeholder="Time Est(min)" type="number" />
-          <Button className="ml-auto h-6 w-6" size="icon" variant="outline">
-            <Trash2 className="h-4 w-4" />
-            <span className="sr-only">Remove task</span>
-          </Button>
-        </div>
-        <div className="flex items-center gap-4">
-          <Circle className="h-4 w-4 text-gray-500" />
-          <Input className="flex-1" placeholder="Task name" />
-          <Input className="w-24" placeholder="Time Est(min)" type="number" />
-          <Button className="ml-auto h-6 w-6" size="icon" variant="outline">
-            <Trash2 className="h-4 w-4" />
-            <span className="sr-only">Remove task</span>
-          </Button>
-        </div>
-      </CardContent>
-      <CardFooter>
-        <div className="w-full">
-          <Button className="" variant={'link'} size={'sm'}>
-            <Plus className="mr-2 h-4 w-4" />
-            Add task
-          </Button>
-          <div className="py-2">
-            <Button className="w-full">
-              <Check className="mr-2 h-4 w-4" />
-              Generate google meeting link
-            </Button>
+    <div>
+      <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
+        <header>
+          <nav className="mx-auto flex max-w-7xl items-center justify-center px-32 py-3 text-[12px]">
+            <span className="flex-1">SyncSpot</span>
+            <div className="flex items-center justify-center gap-4">
+              <a href="/#faq" className="no-underline hover:underline">
+                FAQ
+              </a>
+              <a href="/#doc" className="no-underline hover:underline">
+                Documentation
+              </a>
+            </div>
+            <div className="flex flex-1 justify-end">
+              <motion.button
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <Button size={'sm'} className="text-white">
+                  Login
+                </Button>
+              </motion.button>
+            </div>
+          </nav>
+        </header>
+        <motion.div
+          initial={{ scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1.2 }}
+          transition={{ ease: 'easeOut', duration: 1 }}
+        >
+          <section className="relative mx-auto flex max-w-2xl flex-col items-center gap-2 p-8 pt-16">
+            <h2 className="flex flex-col text-center text-3xl font-medium text-slate-600">
+              The easiest way,{' '}
+              <span className="bg-gradient-to-r from-yellow-300 from-20% via-yellow-400 to-yellow-600 to-70% bg-clip-text text-transparent">
+                to manage your meetings time
+              </span>
+            </h2>
+            <span className="text-xl font-light">
+              Quickly setup bulletpoints to focus on during your meetings
+            </span>
+          </section>
+        </motion.div>
+        <footer>
+          <div className="flex flex-col items-center justify-center py-4 text-[8px]">
+            <h4 className="text-slate-300">
+              Made with ❤️ by{' '}
+              <a
+                href="https://github.com/The-Sailors"
+                className="no-underline hover:underline"
+              >
+                The Sailors
+              </a>{' '}
+            </h4>
+            <a
+              href="https://twitter.com/jj_neno"
+              className="text-slate-500 no-underline hover:underline"
+            >
+              J²
+            </a>
+            <a
+              href="https://twitter.com/LLobosque"
+              className="text-slate-500 no-underline hover:underline"
+            >
+              Lobosque
+            </a>
           </div>
-        </div>
-      </CardFooter>
-    </Card>
+        </footer>
+      </div>
+    </div>
   )
 }
