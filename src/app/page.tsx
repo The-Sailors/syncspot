@@ -1,6 +1,12 @@
 'use client'
 import { motion } from 'framer-motion'
 
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion'
 import { Button } from '@/components/ui/button'
 export default function Home() {
   return (
@@ -34,7 +40,7 @@ export default function Home() {
           animate={{ opacity: 1, scale: 1.2 }}
           transition={{ ease: 'easeOut', duration: 1 }}
         >
-          <section className="relative mx-auto flex max-w-5xl flex-col items-center p-8 pt-32">
+          <section className="relative mx-auto flex max-w-5xl flex-col items-center p-8 pb-64 pt-64">
             <h2 className="flex flex-col text-center text-5xl font-medium text-slate-600 ">
               The easiest way,{' '}
               <span className="bg-gradient-to-r from-yellow-300 from-20% via-yellow-400 to-yellow-600 to-70% bg-clip-text pb-6 text-transparent">
@@ -46,6 +52,64 @@ export default function Home() {
             </span>
           </section>
         </motion.div>
+        <section id="faq">
+          <div className="mx-auto flex max-w-7xl flex-col gap-12 px-8 py-24 md:flex-row">
+            <div className="flex basis-1/2 flex-col text-left">
+              <p className="text-primary mb-4 inline-block font-semibold">
+                FAQ
+              </p>
+              <p className="text-3xl font-extrabold text-slate-600">
+                Frequently Asked Questions
+              </p>
+            </div>
+            <ul className="basis-1/2">
+              <Accordion type="single" collapsible>
+                <AccordionItem value="item-1">
+                  <AccordionTrigger className="text-primary text-start font-bold">
+                    What is the SyncSpot?
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <p>
+                      It's a simple tool to help you manage your meetings time
+                      with predefined objectives.
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-2">
+                  <AccordionTrigger className="text-primary text-start font-bold">
+                    How do I get started?
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <p>
+                      Simply sign up and create a new meeting adding
+                      bulletpoints to focus on during your meeting and how many
+                      time each one should take.
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-3">
+                  <AccordionTrigger className="text-primary text-start font-bold">
+                    For which public SyncSpot was designed?
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <p>
+                      Bored of meetings that take too long? SyncSpot is designed
+                      for you.
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-4">
+                  <AccordionTrigger className="text-primary text-start font-bold">
+                    How many it costs?
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <p>SyncSpot is free to use.</p>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </ul>
+          </div>
+        </section>
         <footer>
           <div className="flex flex-col items-center justify-center py-4 text-sm">
             <h4 className="text-slate-300">
