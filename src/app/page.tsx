@@ -36,7 +36,7 @@ export default function Home() {
             <h2 className="flex flex-col text-center text-6xl font-medium text-slate-600 ">
               The easiest way,{' '}
               <span className="bg-gradient-to-r from-yellow-300 from-20% via-yellow-400 to-yellow-600 to-70% bg-clip-text pb-6 text-transparent">
-                to manage your meetings time
+                to manage your time in meetings
               </span>
             </h2>
             <span className="text-2xl font-light">
