@@ -15,17 +15,17 @@ export default function Home() {
   return (
     <Card className="mx-auto w-full max-w-xl">
       <CardHeader>
-        <CardTitle>Defina suas tarefas</CardTitle>
+        <CardTitle>Define your tasks</CardTitle>
         <CardDescription>
-          Adicione as tarefas que você precisa realizar e estime o tempo que
-          levará para completá-las.
+          Add the tasks you need to complete and estimate how long they will
+          take.
         </CardDescription>
       </CardHeader>
       <CardContent className="grid gap-4 px-6 pb-2">
         <div className="flex items-center gap-4">
           <Circle className="h-4 w-4 text-gray-500" />
-          <Input className="flex-1" placeholder="Nome da tarefa" />
-          <Input className="w-24" placeholder="Temp Est(min)" type="number" />
+          <Input className="flex-1" placeholder="Task name" />
+          <Input className="w-24" placeholder="Time Est(min)" type="number" />
           <Button className="ml-auto h-6 w-6" size="icon" variant="outline">
             <Trash2 className="h-4 w-4" />
             <span className="sr-only">Remove task</span>
@@ -33,8 +33,8 @@ export default function Home() {
         </div>
         <div className="flex items-center gap-4">
           <Circle className="h-4 w-4 text-gray-500" />
-          <Input className="flex-1" placeholder="Nome da tarefa" />
-          <Input className="w-24" placeholder="Temp Est(min)" type="number" />
+          <Input className="flex-1" placeholder="Task name" />
+          <Input className="w-24" placeholder="Time Est(min)" type="number" />
           <Button className="ml-auto h-6 w-6" size="icon" variant="outline">
             <Trash2 className="h-4 w-4" />
             <span className="sr-only">Remove task</span>
@@ -42,8 +42,8 @@ export default function Home() {
         </div>
         <div className="flex items-center gap-4">
           <Circle className="h-4 w-4 text-gray-500" />
-          <Input className="flex-1" placeholder="Nome da tarefa" />
-          <Input className="w-24" placeholder="Temp Est(min)" type="number" />
+          <Input className="flex-1" placeholder="Task name" />
+          <Input className="w-24" placeholder="Time Est(min)" type="number" />
           <Button className="ml-auto h-6 w-6" size="icon" variant="outline">
             <Trash2 className="h-4 w-4" />
             <span className="sr-only">Remove task</span>
@@ -51,8 +51,8 @@ export default function Home() {
         </div>
         <div className="flex items-center gap-4">
           <Circle className="h-4 w-4 text-gray-500" />
-          <Input className="flex-1" placeholder="Nome da tarefa" />
-          <Input className="w-24" placeholder="Temp Est(min)" type="number" />
+          <Input className="flex-1" placeholder="Task name" />
+          <Input className="w-24" placeholder="Time Est(min)" type="number" />
           <Button className="ml-auto h-6 w-6" size="icon" variant="outline">
             <Trash2 className="h-4 w-4" />
             <span className="sr-only">Remove task</span>
@@ -63,12 +63,12 @@ export default function Home() {
         <div className="w-full">
           <Button className="" variant={'link'} size={'sm'}>
             <Plus className="mr-2 h-4 w-4" />
-            Adicionar tarefa
+            Add task
           </Button>
           <div className="py-2">
             <Button className="w-full">
               <Check className="mr-2 h-4 w-4" />
-              Gerar Google Meeting
+              Generate google meeting link
             </Button>
           </div>
         </div>
