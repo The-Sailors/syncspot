@@ -47,7 +47,7 @@ export default function Home() {
         <section id="faq">
           <div className="mx-auto flex max-w-7xl flex-col gap-12 px-8 py-24 md:flex-row">
             <div className="flex basis-1/2 flex-col text-left">
-              <p className="text-primary mb-4 inline-block font-semibold">
+              <p className="mb-4 inline-block font-semibold text-primary">
                 FAQ
               </p>
               <p className="text-3xl font-extrabold text-slate-600">
@@ -57,18 +57,18 @@ export default function Home() {
             <ul className="basis-1/2">
               <Accordion type="single" collapsible>
                 <AccordionItem value="item-1">
-                  <AccordionTrigger className="text-primary text-start font-bold">
+                  <AccordionTrigger className="text-start font-bold text-primary">
                     What is the SyncSpot?
                   </AccordionTrigger>
                   <AccordionContent>
                     <p>
-                      It's a simple tool to help you manage your meetings time
-                      with predefined objectives.
+                      It&apos;s a simple tool to help you manage your meetings
+                      time with predefined objectives.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
-                  <AccordionTrigger className="text-primary text-start font-bold">
+                  <AccordionTrigger className="text-start font-bold text-primary">
                     How do I get started?
                   </AccordionTrigger>
                   <AccordionContent>
@@ -80,7 +80,7 @@ export default function Home() {
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
-                  <AccordionTrigger className="text-primary text-start font-bold">
+                  <AccordionTrigger className="text-start font-bold text-primary">
                     For which public SyncSpot was designed?
                   </AccordionTrigger>
                   <AccordionContent>
@@ -91,7 +91,7 @@ export default function Home() {
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-4">
-                  <AccordionTrigger className="text-primary text-start font-bold">
+                  <AccordionTrigger className="text-start font-bold text-primary">
                     How many it costs?
                   </AccordionTrigger>
                   <AccordionContent>
