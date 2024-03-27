@@ -1,12 +1,12 @@
 import './globals.css'
 
-import { Inter as FontSans } from 'next/font/google'
+import { McLaren as Font } from 'next/font/google'
 
 import { cn } from '@/lib/utils'
 
-const fontSans = FontSans({
+const fontMono = Font({
+  weight: '400',
   subsets: ['latin'],
-  variable: '--font-sans',
 })
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
         <div className="absolute top-0 z-[-2] h-screen w-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:30px_30px]">
           <body
             className={cn(
-              fontSans.className,
+              fontMono.className,
               'relative h-full w-full bg-slate-950 antialiased',
             )}
           >

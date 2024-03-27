@@ -13,7 +13,7 @@ export default function Home() {
     <div>
       <header>
         <nav className="mx-auto flex max-w-7xl items-center justify-center px-32 py-3 text-xl">
-          <span className="flex-1 text-white">SyncSpot</span>
+          <span className="flex-1 text-2xl text-white">SyncSpot</span>
           <div className="flex flex-1 justify-end">
             <motion.button
               whileHover={{ scale: 1.2 }}
@@ -31,8 +31,8 @@ export default function Home() {
         animate={{ opacity: 1, scale: 1.0 }}
         transition={{ ease: 'easeOut', duration: 1 }}
       >
-        <section className="relative mx-auto flex max-w-6xl flex-col items-center p-8 pb-64 pt-64">
-          <h2 className="flex flex-col text-center text-6xl font-medium text-white ">
+        <section className="relative mx-auto flex max-w-7xl flex-col items-center p-8 pb-64 pt-64">
+          <h2 className="flex flex-col text-center text-7xl font-medium text-white ">
             The easiest way,{' '}
             <span className="bg-gradient-to-r from-yellow-300 from-20% via-yellow-400 to-yellow-600 to-70% bg-clip-text pb-6 text-transparent">
               to manage your time in meetings
