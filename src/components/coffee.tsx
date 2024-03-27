@@ -24,7 +24,9 @@ export default function Buymeacoffee() {
       window.dispatchEvent(evt)
     }
 
-    div.appendChild(script)
+    if (div) {
+      div.appendChild(script)
+    }
   }, [])
 
   return <div id="supportByBMC"></div>
