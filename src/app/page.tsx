@@ -19,7 +19,7 @@ export default function Home() {
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9 }}
             >
-              <Button size={'lg'} className="text-white">
+              <Button size={'lg'} className="text-lg text-white">
                 Login
               </Button>
             </motion.button>
@@ -44,7 +44,7 @@ export default function Home() {
         </section>
       </motion.div>
       <section id="faq">
-        <div className="mx-auto flex max-w-7xl flex-row gap-12 px-8">
+        <div className="mx-auto flex max-w-7xl flex-row gap-12 px-8 py-32">
           <div className="flex basis-1/2 flex-col text-left">
             <p className="mb-4 inline-block text-2xl font-semibold text-primary">
               FAQ
@@ -54,13 +54,13 @@ export default function Home() {
             </p>
           </div>
           <ul className="basis-1/2">
-            <Accordion type="single" collapsible>
+            <Accordion type="single" collapsible className="text-lg">
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-start font-bold text-primary">
                   What is the SyncSpot?
                 </AccordionTrigger>
                 <AccordionContent>
-                  <p className="text-white">
+                  <p className="text-lg text-white">
                     It&apos;s a simple tool to help you manage your meetings
                     time with predefined objectives.
                   </p>
@@ -71,7 +71,7 @@ export default function Home() {
                   How do I get started?
                 </AccordionTrigger>
                 <AccordionContent>
-                  <p className="text-white">
+                  <p className="text-lg text-white">
                     Simply sign up and create a new meeting adding bulletpoints
                     to focus on during your meeting and how many time each one
                     should take.
@@ -83,7 +83,7 @@ export default function Home() {
                   For which public SyncSpot was designed?
                 </AccordionTrigger>
                 <AccordionContent>
-                  <p className="text-white">
+                  <p className="text-lg text-white">
                     Bored of meetings that take too long? SyncSpot is designed
                     for you.
                   </p>
@@ -94,7 +94,7 @@ export default function Home() {
                   How many it costs?
                 </AccordionTrigger>
                 <AccordionContent>
-                  <p className="text-white">SyncSpot is free to use.</p>
+                  <p className="text-lg text-white">SyncSpot is free to use.</p>
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -102,8 +102,8 @@ export default function Home() {
         </div>
       </section>
       <footer>
-        <div className="flex flex-col items-center justify-center py-4 text-sm">
-          <h4 className="text-white">
+        <div className="flex flex-col items-center justify-center pb-4 pt-8 text-sm">
+          <h4 className="text-lg text-white">
             Made with ❤️ by{' '}
             <a
               href="https://github.com/The-Sailors"
