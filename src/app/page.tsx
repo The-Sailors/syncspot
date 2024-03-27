@@ -1,6 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 
+import Buymeacoffee from '@/components/coffee'
 import {
   Accordion,
   AccordionContent,
@@ -14,6 +15,7 @@ export default function Home() {
       <header>
         <nav className="mx-auto flex max-w-7xl items-center justify-center px-32 py-3 text-xl">
           <span className="flex-1 text-2xl text-white">SyncSpot</span>
+          <Buymeacoffee />
           <div className="flex flex-1 justify-end">
             <motion.button
               whileHover={{ scale: 1.2 }}
