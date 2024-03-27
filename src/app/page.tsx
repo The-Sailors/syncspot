@@ -41,7 +41,7 @@ export default function Home() {
             </span>
           </h2>
           <span className="text-3xl font-light text-white">
-            Setup bulletpoints to focus on during your meetings
+            Setup bulletpoints to focus on during your calls
           </span>
         </section>
       </motion.div>
